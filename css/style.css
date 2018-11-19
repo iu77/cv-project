@@ -1,0 +1,108 @@
+body {
+  background-color: #f5f5f5;
+}
+.contact-info-titluri {
+  width:310px;
+  height: 500px;
+  text-align: right;
+  color: rgba(27, 37, 97, 0.959);
+  float: right;
+}
+.segmente-continfo{
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+#icon-titlu{
+  padding-inline-start: 170px;
+  float: left;
+}
+#titluri-contactinfo{
+  font-size: 17px;
+  font-weight: bold;
+  color:black
+}
+
+  float: right;
+}
+.Contact-date {
+  width: 450px;
+  height: 200px;
+  text-align: right;
+  color: darkblue;
+  float: right;
+}
+#name {
+  text-align: center;
+  color: darkblue;
+  background-color: rgb(129, 178, 224);
+}
+#content-wrap {
+  border-color: blue;
+}
+
+#left-sidebar {
+  width: 30%;
+  float: left;
+  border-color: red;
+}
+
+#content {
+  border-color: green;
+  padding-left: 30%;
+}
+
+#content div {
+  border-color: lightgreen;
+}
+
+.page-block {
+  display: none;
+  background-color: white;
+  padding: 24px;
+  margin: 20px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+#my-picture {
+  border-radius: 50%;
+<<<<<<< HEAD
+  width : 100px;
+=======
+>>>>>>> 06a36c3f99e816704809404cdc6e01773b6f2790
+}
+#motto {
+  color : darkblue;
+}
+
+#top-menu-bar {
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 119, 255, 0.808);
+}
+#top-menu-bar li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+#top-menu-bar a {
+  padding: 5px 15px 5px 15px;
+  margin: 2px 0 2px 0;
+  text-decoration: none;
+  display: inline-block;
+  color: #ffffff;
+}
+#top-menu-bar a:visited {
+  color: #ffffff;
+}
+#top-menu-bar a:hover {
+  color: #334455;
+  background-color: #ffffff;
+}
+
+.favorite {
+  font-weight: bold;
+}
+
+#footer {
+  clear: both;
+}
