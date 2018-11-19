@@ -19,11 +19,10 @@ body {
 #titluri-contactinfo{
   font-size: 17px;
   font-weight: bold;
-  color:black
+  color:black;
+  /* float: right; */
 }
 
-  float: right;
-}
 .Contact-date {
   width: 450px;
   height: 200px;
@@ -65,10 +64,7 @@ body {
 }
 #my-picture {
   border-radius: 50%;
-<<<<<<< HEAD
   width : 100px;
-=======
->>>>>>> 06a36c3f99e816704809404cdc6e01773b6f2790
 }
 #motto {
   color : darkblue;
