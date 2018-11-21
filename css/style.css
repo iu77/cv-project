@@ -1,39 +1,45 @@
 body {
   background-color: #f5f5f5;
 }
+.cv{
+  background-color: #f5f5f5;
+  width:1100px;
+  height:80px;
+  float: left;
+}
+.grup-contact{
+  background-color #f5f5f5;
+  width:210px;
+  height:260px;
+  float: right;
+  
+}
 .contact-info-titluri {
-  width:310px;
-  height: 500px;
+  width:340px;
+  height: 275px;
   text-align: right;
   color: rgba(27, 37, 97, 0.959);
   float: right;
+  background-color: #f5f5f5;
 }
 .segmente-continfo{
-  padding-top: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
 }
 #icon-titlu{
   padding-inline-start: 170px;
   float: left;
 }
 #titluri-contactinfo{
-  font-size: 17px;
+  font-size: 16px;
   font-weight: bold;
   color:black;
-  /* float: right; */
+
 }
 
-.Contact-date {
-  width: 450px;
-  height: 200px;
-  text-align: right;
-  color: darkblue;
-  float: right;
-}
 #name {
-  text-align: center;
+  text-align: left;
   color: darkblue;
-  background-color: rgb(129, 178, 224);
+  background-color:#f5f5f5;
 }
 #content-wrap {
   border-color: blue;

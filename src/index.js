@@ -8,8 +8,8 @@ function show(id) {
   $(id).style.display = "block";
 }
 
-function hidePage(el){
-  el.style.display = 'none';
+function hideElement(el){
+  el.style.display = "none";
 }
 
 function hideAllPages(){
@@ -21,8 +21,8 @@ var links = document.querySelectorAll("#top-menu-bar a");
 for (var i = 0; i < links.length; i++) {
   links[i].onclick = function(){
     hideAllPages();
-    var page = this.getAttribute('data-page');
-    show(page+"-page");
+    var page = this.getAttribute("data-page");
+    show(page + "-page");
   };
 }
 
