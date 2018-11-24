@@ -1,31 +1,37 @@
-function $(id) {
-  return document.getElementById(id);
+
+function $(id){
+  return document.getElementById(id)
 }
-function hide(id) {
-  $(id).style.display = "none";
+
+function hide(id){
+ $(id).style.display = "none";
+  
 }
 function show(id) {
   $(id).style.display = "block";
 }
 
-function hideElement(el){
-  el.style.display = "none";
-}
 
-function hideAllPages(){
+function hideAllpages(){
   var pages = document.querySelectorAll(".page-block");
-  pages.forEach(hideElement);
-}
+  for( var i=0 ; i < pages.length ; i++ ){
+   pages[i].style.display = 'none';
+  }
 
+}
 var links = document.querySelectorAll("#top-menu-bar a");
-for (var i = 0; i < links.length; i++) {
+for( var i=0 ; i < links.length ; i++ ){
   links[i].onclick = function(){
-    hideAllPages();
-    var page = this.getAttribute("data-page");
-    show(page + "-page");
+    console.warn('hide all page');
+    hideAllpages();
+    var page = this.getAttribute('data-page')
+    console.info('show page',page );
+    show(page+"-page");
+
   };
+
 }
 
-show('home-page');
+
 
 
