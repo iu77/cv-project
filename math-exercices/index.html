@@ -14,7 +14,7 @@
         <input type="text" id="secondNr">
     </div>
     <button onclick="multiplyNumbers('inmulteste...plsf')">Multiply</button>
-    <button>Divide</button>
+    <button id="divideBtn">Divide</button>
     <p>The Result is:</p>
     <p id="result">0</p>
 
@@ -27,11 +27,23 @@
             var secondNr = document.getElementById('secondNr');
             var b = secondNr.value;
 
-          var result = document.getElementById("result");
-          result.innerHTML = a*b ;
-
+            var result = document.getElementById("result");
+            result.innerHTML = a * b;
         }
 
+         function divideNumbers() {
+        
+            var firstNr = document.getElementById('firstNr');
+            var a = firstNr.value;
+
+            var secondNr = document.getElementById('secondNr');
+            var b = secondNr.value;
+
+            var result = document.getElementById("result");
+            result.innerHTML = a / b;
+        }
+        var divideBtn = document.getElementById('divideBtn');
+        divideBtn.onclick = divideNumbers;
 
     </script>
 
