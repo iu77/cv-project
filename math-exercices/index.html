@@ -19,27 +19,21 @@
     <p id="result">0</p>
 
     <script>
+
+        var firstNr = document.getElementById('firstNr');
+        var secondNr = document.getElementById('secondNr');
+        var result = document.getElementById("result");
         function multiplyNumbers() {
-            console.info('pls...inmulteste ceva');
-            var firstNr = document.getElementById('firstNr');
-            var a = firstNr.value;
-
-            var secondNr = document.getElementById('secondNr');
+            
+            var a = firstNr.value;          
             var b = secondNr.value;
-
-            var result = document.getElementById("result");
             result.innerHTML = a * b;
         }
 
          function divideNumbers() {
         
-            var firstNr = document.getElementById('firstNr');
             var a = firstNr.value;
-
-            var secondNr = document.getElementById('secondNr');
             var b = secondNr.value;
-
-            var result = document.getElementById("result");
             result.innerHTML = a / b;
         }
         var divideBtn = document.getElementById('divideBtn');
