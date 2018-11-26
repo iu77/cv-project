@@ -20,24 +20,32 @@
 
     <script>
 
-        var firstNr = document.getElementById('firstNr');
-        var secondNr = document.getElementById('secondNr');
+        var firstNrInput = document.getElementById('firstNr');
+        var secondNrInput = document.getElementById('secondNr');
         var result = document.getElementById("result");
+
         function multiplyNumbers() {
-            
-            var a = firstNr.value;          
-            var b = secondNr.value;
+            var a = firstNrInput.value;
+            var b = secondNrInput.value;
             result.innerHTML = a * b;
         }
 
-         function divideNumbers() {
-        
-            var a = firstNr.value;
-            var b = secondNr.value;
+        function divideNumbers() {
+            var a = firstNrInput.value;
+            var b = secondNrInput.value;
             result.innerHTML = a / b;
+        }
+
+        function addNumbers() {
+            var a = firstNrInput.value;
+            var b = secondNrInput.value;
+            var total = parseInt(a) + parseInt(b);
+            result.innerHTML = total;
         }
         var divideBtn = document.getElementById('divideBtn');
         divideBtn.onclick = divideNumbers;
+
+        document.getElementById('addBtn')
 
     </script>
 
