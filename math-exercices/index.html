@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    </title>Exercises</title>
+</head>
+
+<body>
+    <div>
+        <label for="firstNr">1st Number:</label>
+        <input type="text" id="firstNr">
+    </div>
+    <div>
+        <label for="secondNr">2st Number:</label>
+        <input type="text" id="secondNr">
+    </div>
+    <button onclick="multiplyNumbers('inmulteste...plsf')">Multiply</button>
+    <button>Divide</button>
+    <p>The Result is:</p>
+    <p id="result">0</p>
+
+    <script>
+        function multiplyNumbers() {
+            console.info('pls...inmulteste ceva');
+            var firstNr = document.getElementById('firstNr');
+            var a = firstNr.value;
+
+            var secondNr = document.getElementById('secondNr');
+            var b = secondNr.value;
+
+          var result = document.getElementById("result");
+          result.innerHTML = a*b ;
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
