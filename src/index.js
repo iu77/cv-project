@@ -37,7 +37,7 @@ function initSkillsPage() {
   var skills = ['js', 'html', 'css'];
   var resultList = document.querySelector('#skills-page ul');
 
-  var listItems=skills.map(function (skill) {
+  var listItems = skills.map(function (skill) {
     return `<li>${skill.toUpperCase()}</li>`;
 
   })
