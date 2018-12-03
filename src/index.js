@@ -35,22 +35,22 @@ for (var i = 0; i < links.length; i++) {
 
 function initSkillsPage() {
   var skills = [
-    ['js ', 7, "Andrei"],
-    ['html', 6, ""],
-    ['css', 2, ""]
+    {name:'js', endorsments: 7, endorsedBy: 'Andrei'},
+    {name:'HTML', endorsments: 6, endorsedBy: ''},
+    {name:'css', endorsments: 2, endorsedBy: ''}
   ];
 
   var resultList = document.querySelector('#skills-page ul');
 
   var listItems = skills.map(function (skill) {
-    var endrorsedBy = ' - Endorsed by';
-    if (skill[2] == "") {
-      endrorsedBy = "";
+    var endorsedBy = ' - Endorsed by';
+    if (skill.endorsedBy == "") {
+      endorsedBy = "";
     }
-    var name = skill[0].toUpperCase();
+    var name = skill.name.toUpperCase();
     return `<li> ${name}
-      <span style="color: gray">- ${skill[1]}${endrorsedBy}</span>
-      ${skill[2]}
+      <span style="color: gray">- ${skill.endorsments}${endorsedBy}</span>
+      ${skill.endorsedBy}
       </li>`;
 
   });
