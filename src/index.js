@@ -34,13 +34,26 @@ for (var i = 0; i < links.length; i++) {
 }
 
 function initSkillsPage() {
-  var skills = ['js', 'html', 'css'];
+  var skills = [
+    ['js ', 7, "Andrei"],
+    ['html', 6, ""],
+    ['css', 2, ""]
+  ];
+
   var resultList = document.querySelector('#skills-page ul');
 
   var listItems = skills.map(function (skill) {
-    return `<li>${skill.toUpperCase()}</li>`;
+    var endrorsedBy = ' - Endorsed by';
+    if (skill[2] == "") {
+      endrorsedBy = "";
+    }
+    var name = skill[0].toUpperCase();
+    return `<li> ${name}
+      <span style="color: gray">- ${skill[1]}${endrorsedBy}</span>
+      ${skill[2]}
+      </li>`;
 
-  })
+  });
 
   resultList.innerHTML = listItems.join('');
 }

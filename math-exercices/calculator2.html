@@ -15,29 +15,39 @@
     </div>
     <button onclick="multiplyNumbers()">Multiply</button>
     <button onclick="divideNumbers()">Divide</button>
+    <button onclick="addNumbers()">Sum</button>
+    <button onclick="diferenceNumbers()">Diference</button>
     <p>The Result Is:</p>
     <p id="result">0</p>
 
     <script>
+
+        var firstNr = document.getElementById('firstNr');
+        var secondNr = document.getElementById('secondNr');
+
         function multiplyNumbers() {
-            console.info('inmulteste numerele');
-            var firstNr = document.getElementById('firstNr');
             var a = firstNr.value;
-            var secondNr = document.getElementById('secondNr');
             var b = secondNr.value;
             result.innerHTML = a * b;
-            console.info(a * b);
         }
         function divideNumbers() {
-            console.info('imparte numerele a/b');
-            var firstNr = document.getElementById('firstNr');
             var a = firstNr.value;
-            var secondNr=document.getElementById('secondNr');
-            var b= secondNr.value;
-            result.innerHTML=a/b;
-            console.info(a/b);
+            var b = secondNr.value;
+            result.innerHTML = a / b;
+
         }
 
+        function addNumbers() {
+            var a = firstNr.value;
+            var b = secondNr.value;
+            var total = parseInt(a) + parseInt(b);
+            result.innerHTML = total;
+        }
+        function diferenceNumbers() {
+            var a = firstNr.value;
+            var b = secondNr.value;
+            result.innerHTML = a - b;
+        }
 
     </script>
 </body>
