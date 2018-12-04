@@ -9,24 +9,51 @@
 <body>
     <div>
         <label for="firstNr">1st Number</label>
-        <input type="firstNr">
+        <input type="firstNr" id="firstNr">
     </div>
     <div>
         <label for="secondNr">2St Number</label>
-        <input type="secondNr">
+        <input type="secondNr" id="secondNr">
     </div>
     <button id="multiplyBtn">Multiply</button>
     <button id="divideBtn">Divide</button>
+    <button id="sumBtn">Sum</button>
+    <button id="difBtn">Dif</button>
     <p>The Result is:</p>
     <p id="result">0</p>
 
     <script>
-    
-    function multiplyBtn() {
-        console.info("inmulteste numerele");
-    }
-    
-    
+        var firstNr = document.getElementById('firstNr');
+        var secondNr = document.getElementById('secondNr');
+
+        function multiplyNumbers() {
+            var a = firstNr.value;
+            var b = secondNr.value;
+            result.innerHTML = a * b;
+        }
+        function divideNumbers() {
+            var a = firstNr.value;
+            var b = secondNr.value;
+            result.innerHTML = a / b;
+        }
+        function sumNumbers() {
+            var a = firstNr.value;
+            var b = secondNr.value;
+            var total = parseInt(a) + parseInt(b);
+            result.innerHTML = total;
+        }
+        function difNr() {
+            var a = firstNr.value;
+            var b = secondNr.value;
+            var total = parseInt(a) - parseInt(b);
+            result.innerHTML = total;
+
+        }
+        multiplyBtn.onclick = multiplyNumbers;
+        divideBtn.onclick = divideNumbers;
+        sumBtn.onclick = sumNumbers;
+        difBtn.onclick = difNr;
+
     </script>
 
 
