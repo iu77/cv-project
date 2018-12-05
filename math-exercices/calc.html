@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Caculator simplu</title>
+</head>
+
+<body>
+    <div>
+        <label for="num1">Num1</label>
+        <input type="number" id="num1">
+    </div>
+    <div>
+        <label for="num2">Num2</label>
+        <input type="number" id="num2">
+    </div>
+    <button id="adunaBtn">Aduna</button>
+    <button id="scadeBtn">Scade</button>
+    <button id="inmultesteBtn">Inmulteste</button>
+    <button id="imparteBtn">Imparte</button>
+    <p id="rezultat">Rezultat</p>
+</body>
+<script>
+    var num1 = document.getElementById("num1");
+    var num2 = document.getElementById("num2");
+    
+    function adunaNr() {
+        var a = num1.value;
+        var b = num2.value;
+        var total = parseInt(a) + parseInt(b);
+        rezultat.innerHTML = total;
+    }
+    function scadeNr() {
+        var a = num1.value;
+        var b = num2.value;
+        var total = parseInt(a) - parseInt(b);
+        rezultat.innerHTML = total;
+    }
+    function inmultesteNr() {
+        var a = num1.value;
+        var b = num2.value;
+        var total = parseInt(a) * parseInt(b);
+        rezultat.innerHTML = total;
+    }
+    function imparteNr() {
+        var a = num1.value;
+        var b = num2.value;
+        var total = parseInt(a) / parseInt(b);
+        rezultat.innerHTML = total;
+    }
+    adunaBtn.onclick = adunaNr;
+    scadeBtn.onclick = scadeNr;
+    inmultesteBtn.onclick = inmultesteNr;
+    imparteBtn.onclick = imparteNr;
+
+</script>
+
+</html>
