@@ -31,24 +31,23 @@ function initMenu() {
 
 function initSkillsPage() {
   var skills = [
-    ['js',   7, "Andrei"],
-    ['HTML', 6, ""],
-    ['css',  2, ""],
-    ['electronics',  5, "Gheorghe"],
-    ['engeneering',  1  ,  ""]
-
+    {name: 'js', endorsments: 7, endorsedBy: 'Andrei'},
+    {name: 'HTML', endorsments: 6, endorsedBy: ''},
+    {name: 'engineering', endorsments: 3, endorsedBy: ''},
+    {name: 'electronics', endorsments: 7, endorsedBy: 'Gheorghe'},
+    {name: 'css', endorsments: 2, endorsedBy: ''}
   ];
   var resultList = document.querySelector('#skills-page ul');
 
   var listItems = skills.map(function(skill) {
     var endorsedBy = ' - Endorsed by';
-    if (skill[2] == "") {
+    if (skill.endorsedBy == "") {
       endorsedBy = "";
     }
-    var name = skill[0].toUpperCase();
+    var name = skill.name.toUpperCase();
     return `<li>${name}
-      <span style="color: gray">- ${skill[1]} ${endorsedBy}</span> 
-      ${skill[2]}
+      <span style="color: gray">- ${skill.endorsments} ${endorsedBy}</span> 
+      ${skill.endorsedBy}
       </li>`;
   });
   resultList.innerHTML = listItems.join('');
