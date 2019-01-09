@@ -1,0 +1,21 @@
+<html>
+<h2>Java Script Arrays using for Each() function </h2>
+
+<body>
+
+    <p id="demo"></p>
+
+    <script>
+        var fruits, text;
+        fruits = ['Bananas', 'Orange', 'Aple', 'lime'];
+        text = "<ul>";
+        fruits.forEach(myFunction);
+        text += "</ul>";
+        document.getElementById("demo").innerHTML = text;
+        function myFunction(value) {
+            text += "<li>" + value + "</li>";
+        }
+    </script>
+</body>
+
+</html>
