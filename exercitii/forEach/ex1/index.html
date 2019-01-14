@@ -1,0 +1,18 @@
+<html>
+
+<body>
+    <p>se da sirul :[3, 5, -8, 9, 0, 12]</p>
+
+    <button onclick="numbers.forEach(myFunction)"> Try</button>
+    <p id="result"></p>
+
+    <script>
+        var numbers = [3, 5, -8, 9, 0, 12];
+
+        function myFunction(item, index) {
+            document.getElementById("result").innerHTML = document.getElementById("result").innerHTML + "value[" + index + "]:" + item + "</br>";
+        }
+    </script>
+</body>
+
+</html>

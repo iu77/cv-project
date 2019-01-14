@@ -1,0 +1,10 @@
+.output li {
+    display: block;
+    float: left;
+    width: 15%;
+    border: 2px solid white;
+    padding: 5px;
+    height: 40px;
+    background-color: rgb(70, 116, 185);
+    color: white;
+}

@@ -7,11 +7,11 @@
 <body>
     <div>
         <label for="firstNr">1st Number</label>
-        <input type="text" id="firstNr">
+        <input type="number" id="firstNr">
     </div>
     <div>
         <label for="secondNr">2nd Number</label>
-        <input type="text" id="secondNr">
+        <input type="number" id="secondNr">
     </div>
     <button onclick="multiplyNumbers()">Multiply</button>
     <button onclick="divideNumbers()">Divide</button>
@@ -21,7 +21,6 @@
     <p id="result">0</p>
 
     <script>
-
         var firstNr = document.getElementById('firstNr');
         var secondNr = document.getElementById('secondNr');
 
@@ -34,7 +33,6 @@
             var a = firstNr.value;
             var b = secondNr.value;
             result.innerHTML = a / b;
-
         }
         function addNumbers() {
             var a = firstNr.value;
@@ -48,4 +46,4 @@
             result.innerHTML = a - b;
         }
 
-</script>
+    </script>
